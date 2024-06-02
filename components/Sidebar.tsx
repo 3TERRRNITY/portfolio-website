@@ -5,6 +5,7 @@ import { AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import Transition from './Transition'
 
 const Sidebar = () => {
 	const [isRouting, setIsRoiuting] = useState(false)
@@ -30,6 +31,7 @@ const Sidebar = () => {
 	}, [isRouting])
 	return (
 		<div className='fixed right-8 top-[40%] z-[20] h-[200px] w-[48px] rounded-full bg-gray-500 bg-opacity-50'>
+			{isRouting && <Transition />}
 			<AnimatePresence mode='wait'>
 				<div className='flex flex-col gap-5 pb-3 justify-center items-center h-full'>
 					{NavLinks.map(link => (
