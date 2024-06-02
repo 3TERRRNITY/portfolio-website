@@ -15,7 +15,9 @@ export const Particle = () => {
 			init={particlesInit}
 			loaded={particlesLoaded}
 			options={{
-				fullScreen: { enable: false },
+				fullScreen: {
+					enable: false,
+				},
 				fpsLimit: 120,
 				interactivity: {
 					events: {
