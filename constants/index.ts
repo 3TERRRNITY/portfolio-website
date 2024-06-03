@@ -1,13 +1,13 @@
 import {
+	RxAccessibility,
 	RxCrop,
+	RxDashboard,
 	RxDesktop,
+	RxHome,
 	RxPencil2,
+	RxPerson,
 	RxReader,
 	RxRocket,
-	RxAccessibility,
-	RxHome,
-	RxPerson,
-	RxDashboard,
 } from 'react-icons/rx'
 
 export const Socials = [
